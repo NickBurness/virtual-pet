@@ -12,7 +12,7 @@ describe('constructor', () => {
       const pet = new Pet('Luigi');
       expect(pet.age).toEqual(0);
     });
-  });
+  })
 
 describe('growUp', () => {
     it('increments the age by 1', () => {
@@ -20,7 +20,7 @@ describe('growUp', () => {
       pet.growUp();
       expect(pet.age).toEqual(1);
     });
-  });
+  })
 
 describe('hunger', () => {
     it('decreases hunger by 5', () => {
@@ -36,7 +36,7 @@ describe('fitness', () => {
         pet.fitness();
         expect(pet.fitness).toEqual(10);
     });
-});
+})
 
 describe('walk', () => {
     it('increases fitness by 4', () => {
@@ -45,7 +45,7 @@ describe('walk', () => {
       pet.walk();
       expect(pet.fitness).toEqual(8);
     });
-  });
+  })
 
   describe('walk', () => {
     it('increases fitness by to a maximum of 10', () => {
@@ -54,7 +54,7 @@ describe('walk', () => {
       pet.walk();
       expect(pet.fitness).toEqual(MAXIMUM_FITNESS);
     });
-  });
+  })
 
   describe('feed', () => {
     it('decreases hunger by 3 to a minimum of 0', () => {
@@ -63,7 +63,7 @@ describe('walk', () => {
       pet.feed();
       expect(pet.hunger).toEqual(2);
     });
-  });
+  })
 
   describe('checkUp', () => {
     it('checks on how the pet is feeling', () => {
@@ -73,4 +73,4 @@ describe('walk', () => {
       pet.checkUp();
       expect(console.log('I am hungry and I also need a walk!'));
     });
-  });
+  })
