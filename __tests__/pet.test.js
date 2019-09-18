@@ -8,7 +8,6 @@ describe('constructor', () => {
   })
 
 describe('constructor', () => {
-
     it('has a initial age of 0', () => {
       const pet = new Pet('Luigi');
       expect(pet.age).toEqual(0);
@@ -50,9 +49,18 @@ describe('walk', () => {
 
   describe('walk', () => {
     it('increases fitness by to a maximum of 10', () => {
-      const pet = new Pet('fido');
+      const pet = new Pet('Luigi');
       pet.fitness = 8;
       pet.walk();
       expect(pet.fitness).toEqual(MAXIMUM_FITNESS);
+    });
+  });
+
+  describe('feed', () => {
+    it('decreases hunger by 3 to a minimum of 0', () => {
+      const pet = new Pet('Luigi');
+      pet.hunger = 5;
+      pet.feed();
+      expect(pet.hunger).toEqual(2);
     });
   });
