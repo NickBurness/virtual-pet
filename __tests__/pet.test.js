@@ -64,3 +64,13 @@ describe('walk', () => {
       expect(pet.hunger).toEqual(2);
     });
   });
+
+  describe('checkUp', () => {
+    it('checks on how the pet is feeling', () => {
+      const pet = new Pet('Luigi');
+      pet.hunger = 5;
+      pet.fitness = 3;
+      pet.checkUp();
+      expect(console.log('I am hungry and I also need a walk!'));
+    });
+  });
