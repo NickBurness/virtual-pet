@@ -5,3 +5,4 @@ Using JavaScript
 > * keep your buddy fit with exercise
 > * let he or she grow up 
 
+:monkey: :cow: :bear: :frog: :rabbit :dog: :cat:
